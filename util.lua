@@ -14,16 +14,16 @@ function newRecipe(material, type)
 	itemCount = 1
 	resultCount = 1
 
-	if (material == 'steel-plate') do
+	if material == 'steel-plate' do
 		isEnabled = false
 	end
-	if (type == 'wire') do
+	if type == 'cable' do
 		resultCount = 2
 	end
-	if (type == 'casing') do
+	if type == 'casing' do
 		itemCount = 2
 	end
-	if (type == 'chip') do
+	if type == 'chip' do
 		resultCount = 4
 	end
 
@@ -38,4 +38,17 @@ function newRecipe(material, type)
 			result_count = resultCount,
 			enabled = isEnabled --tech name here
 		}
+end
+
+function addTechnologyRecipe(technology_name, recipes) --takes 2 args: tech name and recipe name table
+    if data.raw.technology[technology_name].effects == nil then
+        data.raw.technology[technology_name].effects = {}
+    end
+	for i,v in recipes do
+		table.insert(data.raw.technology[technology_name].effects, {
+	            type = 'unlock-recipe',
+				recipe = v
+	        }
+	    )
+	end
 end
