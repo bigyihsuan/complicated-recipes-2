@@ -1,21 +1,13 @@
 data:extend({
 ---------------
---Steel
+-----STEEL
+--hcir
 {
 	type = 'item',
 	name = 'high-carbon-iron-plate',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes__/graphics/intermediates/hcip.png', --icon directory
 	subgroup = 'intermediates',
-	stack_size = 100
-},
-{
-	type = 'item',
-	name = 'raw-steel',
-	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/intermediates/raw-steel.png', --icon directory
-	subgroup = 'intermediates',
-	order = 'e-f',
 	stack_size = 100
 },
 {
@@ -29,6 +21,16 @@ data:extend({
 	result = 'high-carbon-iron-plate',
 	result_count = 1,
 	enabled = false --steel processing
+},
+--raw steel
+{
+	type = 'item',
+	name = 'raw-steel',
+	flags = {'goes-to-main-inventory'},
+	icon = '__complicated-recipes__/graphics/intermediates/raw-steel.png',
+	subgroup = 'intermediates',
+	order = 'e-f',
+	stack_size = 100
 },
 {
 	type = 'recipe',
@@ -48,7 +50,7 @@ data:extend({
 	type = 'item',
 	name = 'crushed-stone',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/intermediates/crushed-stone.png', --icon directory
+	icon = '__complicated-recipes__/graphics/intermediates/crushed-stone.png',
 	subgroup = 'intermediates',
 	stack_size = 100
 },

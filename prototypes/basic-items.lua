@@ -17,8 +17,7 @@ newItem(copper, chip),
 newItem(plastic, chip),
 newItem(steel, chip),
 
-newItem(iron, cable),
-newItem(copper, cable),
+newItem(iron, cable), --copper cable is already a thing
 newItem(steel, cable),
 
 newItem(iron, casing),
@@ -31,8 +30,7 @@ newRecipe(copper, chip),
 newRecipe(plastic, chip),
 newRecipe(steel, chip),
 
-newRecipe(iron, cable),
-newRecipe(copper, cable),
+newRecipe(iron, cable), --copper cable is already a thing
 newRecipe(steel, cable),
 
 newRecipe(iron, casing),
@@ -47,7 +45,7 @@ newRecipe(steel, casing),
 	type = 'item',
 	name = 'iron-cable-bundle',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes-2__/graphics/iron-cable-bundle.png', --icon directory
+	icon = '__complicated-recipes-2__/graphics/basic/iron-cable-bundle.png', --icon directory
 	subgroup = 'CR2-intermediates',
 	stack_size = 100
 },
@@ -55,7 +53,7 @@ newRecipe(steel, casing),
 	type = 'item',
 	name = 'copper-cable-bundle',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes-2__/graphics/copper-cable-bundle.png', --icon directory
+	icon = '__complicated-recipes-2__/graphics/basic/copper-cable-bundle.png', --icon directory
 	subgroup = 'CR2-intermediates',
 	stack_size = 100
 },
@@ -63,8 +61,16 @@ newRecipe(steel, casing),
 	type = 'item',
 	name = 'steel-cable-bundle',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes-2__/graphics/steel-cable-bundle.png', --icon directory
+	icon = '__complicated-recipes-2__/graphics/basic/steel-cable-bundle.png', --icon directory
 	subgroup = 'CR2-intermediates',
+	stack_size = 100
+},
+{
+	type = 'item',
+	name = 'logistics-cable-bundle',
+	flags = {'goes-to-main-inventory'},
+	icon = '__complicated-recipes-2__/graphics/basic/logistics-cable-bundle.png',
+	subgroup = 'intermediates',
 	stack_size = 100
 },
 
@@ -102,6 +108,19 @@ newRecipe(steel, casing),
 	result_count = 1,
 	enabled = false --steel processing
 },
+{
+	type = 'recipe',
+	name = 'logistics-cable-bundle',
+	ingredients = {
+		{'red-wire', 4},
+		{'green-wire', 4},
+		{'copper-cable', 4}
+		{'iron-stick', 1}
+	},
+	result = 'logistics-cable-bundle',
+	result_count = ,
+	enabled = false --circuit-network
+},
 
 ------------------
 -----BASICS-------
@@ -111,7 +130,7 @@ newRecipe(steel, casing),
 	type = 'item',
 	name = 'gear-box',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes-2__/graphics/gear-box.png',
+	icon = '__complicated-recipes-2__/graphics/basic/gear-box.png',
 	subgroup = 'intermediates',
 	stack_size = 50
 },
@@ -131,7 +150,7 @@ newRecipe(steel, casing),
 	type = 'item',
 	name = 'piston',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes-2__/graphics/piston',
+	icon = '__complicated-recipes-2__/graphics/basic/piston.png',
 	subgroup = 'intermediates',
 	stack_size = 50
 },
@@ -152,7 +171,7 @@ newRecipe(steel, casing),
 	type = 'item',
 	name = 'basic-engine',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes-2__/graphics/basic-engine.png',
+	icon = '__complicated-recipes-2__/graphics/basic/basic-engine.png',
 	subgroup = 'intermediates',
 	stack_size = 50
 },
@@ -161,7 +180,7 @@ newRecipe(steel, casing),
 	name = 'basic-engine',
 	ingredients = {
 		{'gear-box', 2},
-		{'iron-plate', 2},
+		{'iron-casing', 2},
 		{'piston', 4}
 	},
 	result = 'basic-engine',

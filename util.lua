@@ -4,7 +4,7 @@ function newItem(material, type)
 			type = 'item',
 			name = material..'-'..type,
 			flags = {'goes-to-main-inventory'},
-			icon = '__complicated-recipes-2__/graphics/'..name..'.png', --icon directory
+			icon = '__complicated-recipes-2__/graphics/basic/'..material..'-'..type..'.png', --icon directory
 			subgroup = 'intermediates',
 			stack_size = 100
 		}
