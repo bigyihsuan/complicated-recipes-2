@@ -18,6 +18,7 @@ data:extend({
 	result = 'compressed-solid-fuel',
 	enabled = false --oil processing
 },
+
 --lds
 {
 	type = 'item',
@@ -41,6 +42,7 @@ data:extend({
 	result_count = 1,
 	enabled = false --rocket silo
 },
+
 --rcu case
 {
 	type = 'item',
@@ -64,6 +66,7 @@ data:extend({
 	result_count = 1,
 	enabled = false --rocket silo
 },
+
 --rcu cpu
 {
 	type = 'item',
@@ -86,6 +89,7 @@ data:extend({
 	result_count = 1,
 	enabled = false --rocket silo
 },
+
 --satellite frame
 {
 	type = 'item',
