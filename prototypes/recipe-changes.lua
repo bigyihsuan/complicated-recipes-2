@@ -59,6 +59,28 @@ data.raw.recipe['satellite'].ingredients = {
 	{'rocket-fuel', 50}
 }
 
+--military
+data.raw.recipe['firearm-magazine'].ingredients = {
+	{'bullet', 10},
+	{'blank-magazine', 1},
+	{'yellow-dye', 1}
+}
+data.raw.recipe['piercing-rounds-magazine'].ingredients = {
+	{'piercing-bullet', 10},
+	{'blank-magazine', 1},
+	{'red-dye', 1}
+}
+data.raw.recipe['shotgun-shell'].ingredients = {
+	{'bullet', 10},
+	{'blank-shotgun-shell', 1},
+	{'blue-dye', 1},
+}
+data.raw.recipe['piercing-shotgun-shell'].ingredients = {
+	{'piercing-bullet', 10},
+	{'blank-shotgun-shell', 1},
+	{'purple-dye', 1}
+}
+
 --miscellaneous
 data.raw.recipe['engine-unit'].ingredients = {
 	{'basic-engine', 2},
