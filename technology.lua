@@ -15,3 +15,5 @@ addTechnologyRecipe('advanced-electronics', {'advanced-circuit-board'})
 addTechnologyRecipe('advanced-electronics-2', {'processing-circuit-board'})
 addTechnologyRecipe('circuit-network', {'logistics-wire-bundle'})
 data.raw.technology['advanced-electronics'].prerequisites = {'electronics', 'circuit-network'}
+
+addTechnologyRecipe('battery', {'battery-casing'})

@@ -5,6 +5,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'red-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-red.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[a]-a',
 	stack_size = 100
@@ -14,6 +15,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'blue-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-blue.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[a]-b',
 	stack_size = 100
@@ -23,6 +25,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'yellow-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-yellow.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[a]-c',
 	stack_size = 100
@@ -32,6 +35,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'black-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-black.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[a]-d',
 	stack_size = 100
@@ -41,6 +45,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'white-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-white.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[a]-e',
 	stack_size = 100
@@ -50,6 +55,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'green-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-green.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[b]-a',
 	stack_size = 100
@@ -59,6 +65,7 @@ data:extend({
 	name = 'orange-dye',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/dye/dye-orange.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[b]-b',
 	stack_size = 100
@@ -68,6 +75,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'purple-dye',
 	icon = '__complicated-recipes-2__/graphics/dye/dye-purple.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'a[b]-c',
 	stack_size = 100

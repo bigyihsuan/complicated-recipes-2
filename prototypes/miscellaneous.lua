@@ -7,6 +7,7 @@ data:extend({
 	name = 'high-carbon-iron-plate',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes__/graphics/intermediates/hcip.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
 },
@@ -28,6 +29,7 @@ data:extend({
 	name = 'raw-steel',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes__/graphics/intermediates/raw-steel.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	order = 'e-f',
 	stack_size = 100
@@ -51,6 +53,7 @@ data:extend({
 	name = 'crushed-stone',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes__/graphics/intermediates/crushed-stone.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
 },
@@ -70,6 +73,7 @@ data:extend({
 	name = 'glass',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes__/graphics/intermediates/glass.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
 },
@@ -91,6 +95,7 @@ data:extend({
 	name = 'steel-rebar',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes__/graphics/electrics/steel-rebar.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 50
 },
@@ -117,6 +122,7 @@ data:extend({
 	},
 	result = 'stone',
 	result_count = 10,
+	energy_required = 5;
 	enabled = true --tech name here
 },
 {
@@ -131,6 +137,31 @@ data:extend({
 	result_count = 2,
 	energy_required = 5,
 	enabled = true --tech name here
-}
+},
 ---------------
+--Batteries
+{
+	type = 'item',
+	name = 'battery-casing',
+	flags = {'goes-to-main-inventory'},
+	icon = '__complicated-recipes-2__/graphics/battery-casing.png', --icon directory
+	icon_size = 32,
+	subgroup = 'intermediates',
+	stack_size = 100
+},
+{
+	type = 'recipe',
+	category = 'crafting-with-fluid',
+	name = 'battery-casing',
+	ingredients = {
+		{'steel-casing', 1},
+		{'copper-casing', 1},
+		{'orange-dye', 1},
+		{'black-dye', 1}
+	},
+	result = 'battery-casing',
+	result_count = 1,
+	enabled = false --battery
+}
+
 })

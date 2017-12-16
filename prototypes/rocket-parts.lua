@@ -5,6 +5,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'compressed-solid-fuel',
 	icon = '__complicated-recipes-2__/graphics/compressed-solid-fuel.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	fuel_value = '250MJ',
 	fuel_category = 'chemical',
@@ -25,6 +26,7 @@ data:extend({
 	name = 'low-density-structure-frame',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/lds.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 10
 },
@@ -49,6 +51,7 @@ data:extend({
 	name = 'rocket-control-unit-case',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/rcu-case.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 10
 },
@@ -73,6 +76,7 @@ data:extend({
 	name = 'rocket-control-unit-cpu',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/rcu-cpu.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 10
 },
@@ -96,6 +100,7 @@ data:extend({
 	name = 'satellite-frame',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/sat.png', --icon directory
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 10
 },

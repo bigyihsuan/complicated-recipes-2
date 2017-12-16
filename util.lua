@@ -5,6 +5,7 @@ function newItem(material, type)
 			name = material..'-'..type,
 			flags = {'goes-to-main-inventory'},
 			icon = '__complicated-recipes-2__/graphics/basic/'..material..'-'..type..'.png', --icon directory
+			icon_size = 32,
 			subgroup = 'intermediates',
 			stack_size = 100
 		}

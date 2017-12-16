@@ -3,6 +3,7 @@ data:extend({
 	type = 'item-group',
 	name = 'CR2-intermediates',
 	icon = '__complicated-recipes-2__/graphics/logo.png',
+	icon_size = 32,
 	order = 'z',
 	inventory_order = 'z'
 },

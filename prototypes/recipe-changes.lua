@@ -38,7 +38,7 @@ data.raw.recipe['processing-unit'].ingredients = {
 	{'logistics-cable-bundle', 2},
 	{'steel-cable-bundle', 2},
 	{'advanced-circuit', 2}
-	{type = 'fluid', name = 'sulfuric-acid', amount = 5}
+	{type = 'fluid', name = 'sulfuric-acid', amount = 50}
 }
 
 --rocket parts
@@ -87,4 +87,10 @@ data.raw.recipe['engine-unit'].ingredients = {
 	{'gear-box', 2},
 	{'pipe', 2},
 	{'piston', 2}
+}
+data.raw.recipe['battery'].ingredients = {
+	{'battery-casing', 1},
+	{'iron-plate', 1},
+	{'copper-plate', 1},
+	{type = 'fluid', name = 'sulfuric-acid', count = 20}
 }

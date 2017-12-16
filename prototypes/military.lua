@@ -8,6 +8,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'empty-magazine',
 	icon = '__complicated-recipes__/graphics/empty-magazine.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
 },
@@ -27,6 +28,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'empty-shotgun-shell',
 	icon = '__complicated-recipes__/graphics/empty-shotgun-shell.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
 },
@@ -48,6 +50,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'bullet',
 	icon = '__complicated-recipes__/graphics/bullet.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 200
 },
@@ -69,6 +72,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'piercing-bullet',
 	icon = '__complicated-recipes__/graphics/piercing-bullet.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 200
 },
@@ -91,6 +95,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'gunpowder',
 	icon = '__complicated-recipes__/graphics/gunpowder.png',
+	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'f-e',
 	stack_size = 100
