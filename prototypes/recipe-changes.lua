@@ -42,6 +42,10 @@ data.raw.recipe['processing-unit'].ingredients = {
 }
 
 --rocket parts
+data.raw.recipe['rocket-fuel'].ingredients = {
+	{'compressed-solid-fuel', 10},
+	{'fuel-casing', 1}
+}
 data.raw.recipe['low-density-structure'].ingredients = {
 	{'low-density-structure-frame', 1},
 	{'white-dye', 1},

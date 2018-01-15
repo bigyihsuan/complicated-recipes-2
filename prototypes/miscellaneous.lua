@@ -6,7 +6,7 @@ data:extend({
 	type = 'item',
 	name = 'high-carbon-iron-plate',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/intermediates/hcip.png', --icon directory
+	icon = '__complicated-recipes-2__/graphics/intermediates/hcip.png', --icon directory
 	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
@@ -28,7 +28,7 @@ data:extend({
 	type = 'item',
 	name = 'raw-steel',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/intermediates/raw-steel.png',
+	icon = '__complicated-recipes-2__/graphics/intermediates/raw-steel.png',
 	icon_size = 32,
 	subgroup = 'intermediates',
 	order = 'e-f',
@@ -52,7 +52,7 @@ data:extend({
 	type = 'item',
 	name = 'crushed-stone',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/intermediates/crushed-stone.png',
+	icon = '__complicated-recipes-2__/graphics/intermediates/crushed-stone.png',
 	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
@@ -72,7 +72,7 @@ data:extend({
 	type = 'item',
 	name = 'glass',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/intermediates/glass.png', --icon directory
+	icon = '__complicated-recipes-2__/graphics/intermediates/glass.png', --icon directory
 	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 100
@@ -94,7 +94,7 @@ data:extend({
 	type = 'item',
 	name = 'steel-rebar',
 	flags = {'goes-to-main-inventory'},
-	icon = '__complicated-recipes__/graphics/electrics/steel-rebar.png', --icon directory
+	icon = '__complicated-recipes-2__/graphics/electrics/steel-rebar.png', --icon directory
 	icon_size = 32,
 	subgroup = 'intermediates',
 	stack_size = 50
@@ -162,6 +162,28 @@ data:extend({
 	result = 'battery-casing',
 	result_count = 1,
 	enabled = false --battery
+},
+---------------
+--Fuel Casing
+{
+	type = 'item',
+	name = 'fuel-casing',
+	flags = {'goes-to-main-inventory'},
+	icon = '__complicated-recipes-2__/graphics/fuel-casing.png',
+	icon_size = 32,
+	subgroup = 'intermediates',
+	stack_size = 100
+},
+{
+	type = 'recipe',
+	name = 'fuel-casing',
+	ingredients = {
+		{'steel-casing', 2},
+		{'steel-plate', 1}
+	},
+	result = 'fuel-casing',
+	result_count = 1,
+	enabled = false --steel-processing
 }
 
 })
