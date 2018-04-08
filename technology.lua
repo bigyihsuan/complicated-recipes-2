@@ -17,3 +17,11 @@ addTechnologyRecipe('circuit-network', {'logistics-wire-bundle'})
 data.raw.technology['advanced-electronics'].prerequisites = {'electronics', 'circuit-network'}
 
 addTechnologyRecipe('battery', {'battery-casing'})
+
+addTechnologyRecipe('military', {'empty-shotgun-shell'})
+addTechnologyRecipe('military-2', {'piercing-bullet'})
+addTechnologyRecipe('military-3', {'blank-capsule'})
+
+addTechnologyRecipe('combat-robotics', {'slowdown-solution', 'poison'})
+
+addTechnologyRecipe('laser', {'laser-emitter'})

@@ -11,6 +11,23 @@ data.raw.recipe['concrete'].ingredients = {
 	{'stone-brick', 5},
 	{'steel-rebar', 1}
 }
+data.raw.recipe['hazard-concrete'].ingredients = {
+	{'concrete', 10},
+	{'yellow-dye', 1},
+	{'black-dye', 1}
+}
+
+data.raw.recipe['refined-concrete'].ingredients = {
+	{type = 'fluid', name = 'water', count = 100},
+	{'concrete', 20},
+	{'steel-rebar', 1},
+	{'iron-stick', 8}
+}
+data.raw.recipe['refined-hazard-concrete'].ingredients = {
+	{'refined-concrete', 10},
+	{'yellow-dye', 1},
+	{'black-dye', 1}
+}
 
 --circuits
 data.raw.recipe['red-wire'].ingredients = {
@@ -84,6 +101,43 @@ data.raw.recipe['piercing-shotgun-shell'].ingredients = {
 	{'blank-shotgun-shell', 1},
 	{'purple-dye', 1}
 }
+
+--capsules
+data.raw.recipe['poison-capsule'].type = 'crafting-with-fluid'
+data.raw.recipe['poison-capsule'].ingredients = {
+	{'blank-capsule', 1},
+	{type = 'fluid', name = 'poison', amount = 100},
+	{'electronic-circuit', 3}
+}
+
+data.raw.recipe['slowdown-capsule'].type = 'crafting-with-fluid'
+data.raw.recipe['slowdown-capsule'].ingredients = {
+	{'blank-capsule', 1},
+	{'poison-capsule', 2},
+	{type = 'fluid', name = 'slowdown-solution', amount = 100},
+	{'electronic-circuit', 3}
+}
+data.raw.recipe['defender-capsule'].ingredients = {
+	{'blank-capsule', 1},
+	{'slowdown-capsule', 4},
+	{'piercing-rounds-magazine', 5},
+	{'electronic-circuit', 3}
+}
+data.raw.recipe['distractor-capsule'].ingredients = {
+	{'blank-capsule', 1},
+	{'defender-capsule', 8},
+	{'laser-emitter', 5},
+	{'advanced-circuit', 3}
+}
+data.raw.recipe['destroyer-capsule'].ingredients = {
+	{'blank-capsule', 1},
+	{'distractor-capsule', 16},
+	{'laser-emitter', 10},
+	{'speed-module', 4}
+}
+
+
+
 
 --miscellaneous
 data.raw.recipe['engine-unit'].ingredients = {

@@ -47,7 +47,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/iron-cable-bundle.png', --icon directory
 	icon_size = 32,
-	subgroup = 'CR2-intermediates',
+	subgroup = 'basic',
 	stack_size = 100
 },
 {
@@ -56,7 +56,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/copper-cable-bundle.png', --icon directory
 	icon_size = 32,
-	subgroup = 'CR2-intermediates',
+	subgroup = 'basic',
 	stack_size = 100
 },
 {
@@ -65,7 +65,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/steel-cable-bundle.png', --icon directory
 	icon_size = 32,
-	subgroup = 'CR2-intermediates',
+	subgroup = 'basic',
 	stack_size = 100
 },
 {
@@ -74,7 +74,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/logistics-cable-bundle.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'basic',
 	stack_size = 100
 },
 
@@ -122,7 +122,7 @@ newRecipe(steel, casing),
 		{'iron-stick', 1}
 	},
 	result = 'logistics-cable-bundle',
-	result_count = ,
+	result_count = 1,
 	enabled = false --circuit-network
 },
 
@@ -136,7 +136,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/gear-box.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'basic',
 	stack_size = 50
 },
 {
@@ -157,7 +157,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/piston.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'basic',
 	stack_size = 50
 },
 {
@@ -179,7 +179,7 @@ newRecipe(steel, casing),
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/basic/basic-engine.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'basic',
 	stack_size = 50
 },
 {
