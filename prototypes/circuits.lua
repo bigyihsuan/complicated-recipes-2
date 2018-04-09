@@ -80,7 +80,7 @@ data:extend({
 	ingredients = {
 		{'advanced-circuit-board', 2},
 		{'electronic-circuit-board', 20},
-		{'steel-chip', 2}
+		{'steel-chip', 2},
 		{'blue-dye', 1}
 	},
 	result = 'processing-circuit-board',

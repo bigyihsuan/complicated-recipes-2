@@ -7,7 +7,7 @@ data.raw.recipe['steel-plate'].energy_required = 5
 
 --concrete
 data.raw.recipe['concrete'].ingredients = {
-	{type = 'fluid', name = 'water', count = 100},
+	{type = 'fluid', name = 'water', amount = 100},
 	{'stone-brick', 5},
 	{'steel-rebar', 1}
 }
@@ -18,7 +18,7 @@ data.raw.recipe['hazard-concrete'].ingredients = {
 }
 
 data.raw.recipe['refined-concrete'].ingredients = {
-	{type = 'fluid', name = 'water', count = 100},
+	{type = 'fluid', name = 'water', amount = 100},
 	{'concrete', 20},
 	{'steel-rebar', 1},
 	{'iron-stick', 8}
@@ -54,7 +54,7 @@ data.raw.recipe['processing-unit'].ingredients = {
 	{'processing-circuit-board', 1},
 	{'logistics-cable-bundle', 2},
 	{'steel-cable-bundle', 2},
-	{'advanced-circuit', 2}
+	{'advanced-circuit', 2},
 	{type = 'fluid', name = 'sulfuric-acid', amount = 50}
 }
 
@@ -83,34 +83,34 @@ data.raw.recipe['satellite'].ingredients = {
 --military
 data.raw.recipe['firearm-magazine'].ingredients = {
 	{'bullet', 10},
-	{'blank-magazine', 1},
+	{'empty-magazine', 1},
 	{'yellow-dye', 1}
 }
 data.raw.recipe['piercing-rounds-magazine'].ingredients = {
 	{'piercing-bullet', 10},
-	{'blank-magazine', 1},
+	{'empty-magazine', 1},
 	{'red-dye', 1}
 }
 data.raw.recipe['shotgun-shell'].ingredients = {
 	{'bullet', 10},
-	{'blank-shotgun-shell', 1},
+	{'empty-shotgun-shell', 1},
 	{'blue-dye', 1},
 }
 data.raw.recipe['piercing-shotgun-shell'].ingredients = {
 	{'piercing-bullet', 10},
-	{'blank-shotgun-shell', 1},
+	{'empty-shotgun-shell', 1},
 	{'purple-dye', 1}
 }
 
 --capsules
-data.raw.recipe['poison-capsule'].type = 'crafting-with-fluid'
+data.raw.recipe['poison-capsule'].category = 'crafting-with-fluid'
 data.raw.recipe['poison-capsule'].ingredients = {
 	{'blank-capsule', 1},
 	{type = 'fluid', name = 'poison', amount = 100},
 	{'electronic-circuit', 3}
 }
 
-data.raw.recipe['slowdown-capsule'].type = 'crafting-with-fluid'
+data.raw.recipe['slowdown-capsule'].category = 'crafting-with-fluid'
 data.raw.recipe['slowdown-capsule'].ingredients = {
 	{'blank-capsule', 1},
 	{'poison-capsule', 2},

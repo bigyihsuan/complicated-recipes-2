@@ -1,4 +1,4 @@
-require(util)
+require('util')
 
 local iron = 'iron-plate'
 local copper = 'copper-plate'
@@ -118,7 +118,7 @@ newRecipe(steel, casing),
 	ingredients = {
 		{'red-wire', 4},
 		{'green-wire', 4},
-		{'copper-cable', 4}
+		{'copper-cable', 4},
 		{'iron-stick', 1}
 	},
 	result = 'logistics-cable-bundle',
