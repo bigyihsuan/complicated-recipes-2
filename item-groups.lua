@@ -35,10 +35,8 @@ data:extend({
 },
 {
 	type = 'item-subgroup',
-	name = 'intermediates',
+	name = 'military',
 	group = 'CR2-military',
 	order = 'a',
-},
-
-
+}
 })

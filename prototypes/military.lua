@@ -9,7 +9,7 @@ data:extend({
 	name = 'empty-magazine',
 	icon = '__complicated-recipes-2__/graphics/military/empty-magazine.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	stack_size = 100
 },
 {
@@ -29,7 +29,7 @@ data:extend({
 	name = 'empty-shotgun-shell',
 	icon = '__complicated-recipes-2__/graphics/military/empty-shotgun-shell.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	stack_size = 100
 },
 {
@@ -51,7 +51,7 @@ data:extend({
 	name = 'bullet',
 	icon = '__complicated-recipes-2__/graphics/military/bullet.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	stack_size = 200
 },
 {
@@ -73,7 +73,7 @@ data:extend({
 	name = 'piercing-bullet',
 	icon = '__complicated-recipes-2__/graphics/military/piercing-bullet.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	stack_size = 200
 },
 {
@@ -96,7 +96,7 @@ data:extend({
 	name = 'gunpowder',
 	icon = '__complicated-recipes-2__/graphics/military/gunpowder.png',
 	icon_size = 32,
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	stack_size = 100
 },
 {
@@ -121,7 +121,7 @@ data:extend({
 	flags= { "goes-to-main-inventory" },
 	name = 'empty-capsule',
 	icon = '__complicated-recipes-2__/graphics/military/empty-capsule.png',
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	icon_size = 32,
 	stack_size = 50
 },
@@ -142,7 +142,7 @@ data:extend({
 	name = 'laser-emitter',
 	flags = {'goes-to-main-inventory'},
 	icon = '__complicated-recipes-2__/graphics/military/laser-emitter.png', --icon directory
-	subgroup = 'intermediates',
+	subgroup = 'military',
 	icon_size = 32,
 	stack_size = 50
 },
