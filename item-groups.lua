@@ -28,7 +28,7 @@ data:extend({
 {
 	type = 'item-group',
 	name = 'CR2-military',
-	icon = '__complicated-recipes-2__/graphics/military/blank-magazine.png',
+	icon = '__complicated-recipes-2__/graphics/military/empty-magazine.png',
 	icon_size = 32,
 	order = 'zz',
 	inventory_order = 'zz'

@@ -82,7 +82,7 @@ data:extend({
 	ingredients = {
 		{'bullet', 10},
 		{'steel-chip', 1},
-		{'copper-ship', 5}
+		{'copper-chip', 5}
 	},
 	result = 'piercing-bullet',
 	result_count = 10,
@@ -119,19 +119,19 @@ data:extend({
 {
 	type = 'item',
 	flags= { "goes-to-main-inventory" },
-	name = 'blank-capsule',
-	icon = '__complicated-recipes-2__/graphics/military/blank-capsule.png',
+	name = 'empty-capsule',
+	icon = '__complicated-recipes-2__/graphics/military/empty-capsule.png',
 	subgroup = 'intermediates',
 	icon_size = 32,
 	stack_size = 50
 },
 {
 	type = 'recipe',
-	name = 'blank-capsule',
+	name = 'empty-capsule',
 	ingredients = {
 		{'steel-plate', 5}
 	},
-	result = 'blank-capsule',
+	result = 'empty-capsule',
 	result_count = 10,
 	enabled = false --military-3
 },
@@ -151,7 +151,7 @@ data:extend({
 	name = 'laser-emitter',
 	energy_required = 5,
 	ingredients = {
-		{'copper-wire-bundle', 10},
+		{'copper-cable-bundle', 10},
 		{'battery', 5},
 		{'iron-stick', 1}
 	},

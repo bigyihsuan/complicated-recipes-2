@@ -1,13 +1,13 @@
 require('util')
 
-local iron = 'iron-plate'
-local copper = 'copper-plate'
-local steel = 'steel-plate'
-local plastic = 'plastic-bar'
+iron = 'iron'
+copper = 'copper'
+steel = 'steel'
+plastic = 'plastic'
 
-local chip = 'chip'
-local cable = 'cable'
-local casing = 'casing'
+chip = 'chip'
+cable = 'cable'
+casing = 'casing'
 
 
 data:extend({
@@ -23,6 +23,7 @@ newItem(steel, cable),
 newItem(iron, casing),
 newItem(copper, casing),
 newItem(steel, casing),
+newItem(plastic, casing),
 
 --recipes
 newRecipe(iron, chip),
@@ -36,6 +37,7 @@ newRecipe(steel, cable),
 newRecipe(iron, casing),
 newRecipe(copper, casing),
 newRecipe(steel, casing),
+newRecipe(plastic, casing),
 
 ------------------
 -----BUNDLES------
@@ -142,11 +144,20 @@ newRecipe(steel, casing),
 {
 	type = 'recipe',
 	name = 'gear-box',
-	ingredients = {
-		{'iron-casing', 2},
-		{'iron-gear-wheel', 2}
+	normal = {
+		ingredients = {
+			{'iron-casing', 2},
+			{'iron-gear-wheel', 2}
+		},
+		result = 'gear-box'
 	},
-	result = 'gear-box',
+	expensive = {
+		ingredients = {
+			{'iron-casing', 4},
+			{'iron-gear-wheel', 4}
+		},
+		result = 'gear-box'
+	},
 	result_count = 1,
 	enabled = true
 },
@@ -163,12 +174,22 @@ newRecipe(steel, casing),
 {
 	type = 'recipe',
 	name = 'piston',
-	ingredients = {
-		{'iron-stick', 1},
-		{'iron-casing', 2},
-		{'iron-plate', 2}
+	normal = {
+		ingredients = {
+			{'iron-stick', 1},
+			{'iron-casing', 2},
+			{'iron-plate', 2}
+		},
+		result = 'piston'
 	},
-	result = 'piston',
+	expensive = {
+		ingredients = {
+			{'iron-stick', 2},
+			{'iron-casing', 4},
+			{'iron-plate', 4}
+		},
+		result = 'piston'
+	},
 	result_count = 1,
 	enabled = true
 },
@@ -185,16 +206,23 @@ newRecipe(steel, casing),
 {
 	type = 'recipe',
 	name = 'basic-engine',
-	ingredients = {
-		{'gear-box', 2},
-		{'iron-casing', 2},
-		{'piston', 4}
+	normal = {
+		ingredients = {
+			{'gear-box', 2},
+			{'iron-casing', 2},
+			{'piston', 4}
+		},
+		result = 'basic-engine'
 	},
-	result = 'basic-engine',
+	expensive = {
+		ingredients = {
+			{'gear-box', 4},
+			{'iron-casing', 4},
+			{'piston', 8}
+		},
+		result = 'basic-engine'
+	},
 	result_count = 1,
 	enabled = true --tech name here
 }
-
-
-
 })

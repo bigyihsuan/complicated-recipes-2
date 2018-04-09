@@ -1,6 +1,9 @@
 --steel
-data.raw.recipe['steel-plate'].ingredients = {
+data.raw.recipe['steel-plate'].normal.ingredients = {
 	{'raw-steel', 2}
+}
+data.raw.recipe['steel-plate'].expensive.ingredients = {
+	{'raw-steel', 4}
 }
 data.raw.recipe['steel-plate'].category = 'crafting'
 data.raw.recipe['steel-plate'].energy_required = 5
@@ -35,27 +38,47 @@ data.raw.recipe['red-wire'].ingredients = {
 	{'copper-cable', 1},
 	{'red-dye', 1}
 }
+
 data.raw.recipe['green-wire'].ingredients = {
 	{'electronic-circuit', 1},
 	{'copper-cable', 1},
 	{'green-dye', 1}
 }
-data.raw.recipe['electronic-circuit'].ingredients = {
+
+data.raw.recipe['electronic-circuit'].normal.ingredients = {
 	{'electronic-circuit-board', 1},
 	{'copper-cable-bundle', 1},
 	{'iron-plate', 1}
 }
-data.raw.recipe['advanced-circuit'].ingredients = {
+data.raw.recipe['advanced-circuit'].normal.ingredients = {
 	{'advanced-circuit-board', 1},
 	{'copper-cable-bundle', 2},
-	{'steel-cable-bundle', 2},
+	{'steel-cable-bundle', 2}
 }
-data.raw.recipe['processing-unit'].ingredients = {
+data.raw.recipe['processing-unit'].normal.ingredients = {
 	{'processing-circuit-board', 1},
 	{'logistics-cable-bundle', 2},
 	{'steel-cable-bundle', 2},
 	{'advanced-circuit', 2},
 	{type = 'fluid', name = 'sulfuric-acid', amount = 50}
+}
+
+data.raw.recipe['electronic-circuit'].expensive.ingredients = {
+	{'electronic-circuit-board', 1},
+	{'copper-cable-bundle', 2},
+	{'iron-plate', 2}
+}
+data.raw.recipe['advanced-circuit'].expensive.ingredients = {
+	{'advanced-circuit-board', 1},
+	{'copper-cable-bundle', 4},
+	{'steel-cable-bundle', 4},
+}
+data.raw.recipe['processing-unit'].expensive.ingredients = {
+	{'processing-circuit-board', 1},
+	{'logistics-cable-bundle', 2},
+	{'steel-cable-bundle', 2},
+	{'advanced-circuit', 2},
+	{type = 'fluid', name = 'sulfuric-acid', amount = 100}
 }
 
 --rocket parts
@@ -64,9 +87,9 @@ data.raw.recipe['rocket-fuel'].ingredients = {
 	{'fuel-casing', 1}
 }
 data.raw.recipe['low-density-structure'].ingredients = {
-	{'low-density-structure-frame', 1},
+	{'low-density-structure-frame', 2},
 	{'white-dye', 1},
-	{'plastic-bar', 5}
+	{'plastic-bar', 10}
 }
 data.raw.recipe['rocket-control-unit'].ingredients = {
 	{'rocket-control-unit-case', 1},
@@ -105,32 +128,32 @@ data.raw.recipe['piercing-shotgun-shell'].ingredients = {
 --capsules
 data.raw.recipe['poison-capsule'].category = 'crafting-with-fluid'
 data.raw.recipe['poison-capsule'].ingredients = {
-	{'blank-capsule', 1},
+	{'empty-capsule', 1},
 	{type = 'fluid', name = 'poison', amount = 100},
 	{'electronic-circuit', 3}
 }
 
 data.raw.recipe['slowdown-capsule'].category = 'crafting-with-fluid'
 data.raw.recipe['slowdown-capsule'].ingredients = {
-	{'blank-capsule', 1},
+	{'empty-capsule', 1},
 	{'poison-capsule', 2},
 	{type = 'fluid', name = 'slowdown-solution', amount = 100},
 	{'electronic-circuit', 3}
 }
 data.raw.recipe['defender-capsule'].ingredients = {
-	{'blank-capsule', 1},
+	{'empty-capsule', 1},
 	{'slowdown-capsule', 4},
 	{'piercing-rounds-magazine', 5},
 	{'electronic-circuit', 3}
 }
 data.raw.recipe['distractor-capsule'].ingredients = {
-	{'blank-capsule', 1},
+	{'empty-capsule', 1},
 	{'defender-capsule', 8},
 	{'laser-emitter', 5},
 	{'advanced-circuit', 3}
 }
 data.raw.recipe['destroyer-capsule'].ingredients = {
-	{'blank-capsule', 1},
+	{'empty-capsule', 1},
 	{'distractor-capsule', 16},
 	{'laser-emitter', 10},
 	{'speed-module', 4}
@@ -150,5 +173,5 @@ data.raw.recipe['battery'].ingredients = {
 	{'battery-casing', 1},
 	{'iron-plate', 1},
 	{'copper-plate', 1},
-	{type = 'fluid', name = 'sulfuric-acid', count = 20}
+	{type = 'fluid', name = 'sulfuric-acid', count = 40}
 }

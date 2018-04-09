@@ -14,11 +14,31 @@ end
 function newRecipe(material, type)
 	itemCount = 1
 	resultCount = 1
-
-	if material == 'steel-plate' then
+	mat = ''
+	isEnabled = true
+	
+--material spacific conditions
+	if material == 'steel' then
 		isEnabled = false
 	end
 
+	if material == 'iron' then
+		mat = 'iron-plate'
+	end
+
+	if material == 'copper' then
+		mat = 'copper-plate'
+	end
+
+	if material == 'steel' then
+		mat = 'steel-plate'
+	end
+
+	if material == 'plastic' then
+		mat = 'plastic-bar'
+	end
+
+--type specific conditions
 	if type == 'cable' then
 		resultCount = 2
 	end
@@ -37,10 +57,18 @@ function newRecipe(material, type)
 		{
 			type = 'recipe',
 			name = recipeName,
-			ingredients = {
-				{material, itemCount}
+			normal = {
+				ingredients = {
+					{mat, itemCount}
+				},
+				result = recipeName,
 			},
-			result = recipeName,
+			expensive = {
+				ingredients = {
+					{mat, itemCount * 2}
+				},
+				result = recipeName,
+			},
 			result_count = resultCount,
 			enabled = isEnabled --tech name here
 		}
