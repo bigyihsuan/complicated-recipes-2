@@ -9,6 +9,7 @@ data:extend({
 	icon = '__complicated-recipes-2__/graphics/hcip.png', --icon directory
 	icon_size = 32,
 	subgroup = 'intermediates',
+	order = 'g',
 	stack_size = 100
 },
 {
@@ -31,7 +32,7 @@ data:extend({
 	icon = '__complicated-recipes-2__/graphics/raw-steel.png',
 	icon_size = 32,
 	subgroup = 'intermediates',
-	order = 'e-f',
+	order = 'g',
 	stack_size = 100
 },
 {

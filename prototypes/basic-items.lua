@@ -50,6 +50,7 @@ newRecipe(plastic, casing),
 	icon = '__complicated-recipes-2__/graphics/basic/iron-cable-bundle.png', --icon directory
 	icon_size = 32,
 	subgroup = 'basic',
+	order = 'd[iron]',
 	stack_size = 100
 },
 {
@@ -59,6 +60,7 @@ newRecipe(plastic, casing),
 	icon = '__complicated-recipes-2__/graphics/basic/copper-cable-bundle.png', --icon directory
 	icon_size = 32,
 	subgroup = 'basic',
+	order = 'd[copper]',
 	stack_size = 100
 },
 {
@@ -68,6 +70,7 @@ newRecipe(plastic, casing),
 	icon = '__complicated-recipes-2__/graphics/basic/steel-cable-bundle.png', --icon directory
 	icon_size = 32,
 	subgroup = 'basic',
+	order = 'd[steel]',
 	stack_size = 100
 },
 {
@@ -77,6 +80,7 @@ newRecipe(plastic, casing),
 	icon = '__complicated-recipes-2__/graphics/basic/logistics-cable-bundle.png',
 	icon_size = 32,
 	subgroup = 'basic',
+	order = 'd[logistics]',
 	stack_size = 100
 },
 

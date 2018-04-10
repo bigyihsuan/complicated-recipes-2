@@ -8,6 +8,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-a',
+	order = 'e[1]',
 	stack_size = 100
 },
 {
@@ -18,6 +19,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-b',
+	order = 'e[5]',
 	stack_size = 100
 },
 {
@@ -28,6 +30,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-c',
+	order = 'e[7]',
 	stack_size = 100
 },
 {
@@ -38,6 +41,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-d',
+	order = 'e[8]',
 	stack_size = 100
 },
 {
@@ -48,6 +52,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-e',
+	order = 'e[5]',
 	stack_size = 100
 },
 {
@@ -58,6 +63,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[b]-a',
+	order = 'e[4]',
 	stack_size = 100
 },
 {
@@ -68,6 +74,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[b]-b',
+	order = 'e[2]',
 	stack_size = 100
 },
 {
@@ -78,6 +85,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[b]-c',
+	order = 'e[6]',
 	stack_size = 100
 },
 

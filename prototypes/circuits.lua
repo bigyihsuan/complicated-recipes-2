@@ -8,6 +8,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'c[board-0]',
+	order = 'f[0]',
 	stack_size = 100
 },
 {
@@ -28,6 +29,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'c[board-1]',
+	order = 'f[1]',
 	stack_size = 100
 },
 {
@@ -48,6 +50,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'c[board-2]',
+	order = 'f[2]',
 	stack_size = 100
 },
 {
@@ -71,6 +74,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'intermediates',
 	inventory_order = 'c[board-3]',
+	order = 'f[3]',
 	stack_size = 100
 },
 {

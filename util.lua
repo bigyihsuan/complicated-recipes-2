@@ -1,4 +1,17 @@
 function newItem(material, type)
+	local prio = 'a'
+	if type == 'cable' then
+		prio = 'a'
+	end
+
+	if type == 'casing' then
+		prio = 'b'
+	end
+
+	if type == 'chip' then
+		prio = 'c'
+	end
+
 	return
 		{
 			type = 'item',
@@ -7,6 +20,7 @@ function newItem(material, type)
 			icon = '__complicated-recipes-2__/graphics/basic/'..material..'-'..type..'.png', --icon directory
 			icon_size = 32,
 			subgroup = 'basic',
+			order = prio..'['..material..']',
 			stack_size = 100
 		}
 end
