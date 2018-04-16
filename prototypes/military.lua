@@ -19,6 +19,7 @@ data:extend({
 		{'iron-casing', 1}
 	},
 	result = 'empty-magazine',
+	energy_required = 2,
 	result_count = 1
 },
 
@@ -41,6 +42,7 @@ data:extend({
 	},
 	result = 'empty-shotgun-shell',
 	result_count = 1,
+	energy_required = 2,
 	enabled = false --military
 },
 

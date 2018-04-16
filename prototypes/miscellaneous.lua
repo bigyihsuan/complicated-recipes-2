@@ -15,7 +15,7 @@ data:extend({
 {
 	type = 'recipe',
 	name = 'high-carbon-iron-plate',
-	energy_required = 1,
+	energy_required = 2,
 	ingredients = {
 		{'iron-plate', 2},
 		{'coal', 1}
@@ -42,7 +42,7 @@ data:extend({
 		{'high-carbon-iron-plate', 2}
 	},
 	category = 'smelting',
-	energy_required = 1,
+	energy_required = 2,
 	result = 'raw-steel',
 	result_count = 1,
 	enabled = false --steel processing
@@ -66,6 +66,7 @@ data:extend({
 	},
 	result = 'crushed-stone',
 	result_count = 5,
+	energy_required = 2,
 	enabled = true
 },
 --glass
@@ -109,6 +110,7 @@ data:extend({
 	},
 	result = 'steel-rebar',
 	result_count = 2,
+	energy_required = 4,
 	enabled = false --steel-processing
 },
 ---------------
@@ -162,6 +164,7 @@ data:extend({
 	},
 	result = 'battery-casing',
 	result_count = 1,
+	energy_required = 5,
 	enabled = false --battery
 },
 ---------------
@@ -184,6 +187,7 @@ data:extend({
 	},
 	result = 'fuel-casing',
 	result_count = 1,
+	energy_required = 5,
 	enabled = false --steel-processing
 }
 

@@ -93,6 +93,7 @@ newRecipe(plastic, casing),
 		{'iron-stick', 1}
 	},
 	result = 'iron-cable-bundle',
+	energy_required = 1,
 	result_count = 1,
 	enabled = true --tech name here
 },
@@ -104,6 +105,7 @@ newRecipe(plastic, casing),
 		{'iron-stick', 1}
 	},
 	result = 'copper-cable-bundle',
+	energy_required = 1,
 	result_count = 1,
 	enabled = true --tech name here
 },
@@ -115,6 +117,7 @@ newRecipe(plastic, casing),
 		{'iron-stick', 1}
 	},
 	result = 'steel-cable-bundle',
+	energy_required = 1,
 	result_count = 1,
 	enabled = false --steel processing
 },
@@ -128,6 +131,7 @@ newRecipe(plastic, casing),
 		{'iron-stick', 1}
 	},
 	result = 'logistics-cable-bundle',
+	energy_required = 1,
 	result_count = 1,
 	enabled = false --circuit-network
 },
@@ -163,6 +167,7 @@ newRecipe(plastic, casing),
 		result = 'gear-box'
 	},
 	result_count = 1,
+	energy_required = 2,
 	enabled = true
 },
 --Piston
@@ -227,6 +232,7 @@ newRecipe(plastic, casing),
 		result = 'basic-engine'
 	},
 	result_count = 1,
+	energy_required = 3,
 	enabled = true --tech name here
 }
 })
