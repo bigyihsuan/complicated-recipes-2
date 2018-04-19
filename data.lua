@@ -4,6 +4,7 @@ require('prototypes.dyes')
 require('prototypes.military')
 require('prototypes.miscellaneous')
 require('prototypes.recipe-changes')
+require('prototypes.entity-recipe-changes')
 require('prototypes.rocket-parts')
 
 require('technology')
