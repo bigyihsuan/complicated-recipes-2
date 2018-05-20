@@ -1,7 +1,7 @@
 {
 	"name": "complicated-recipes-2",
 	"author": "bigyihsuan",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"title": "Complicated Recipes 2",
 	"description": "The new Complicated Recipes with new and improved recipes. Suggest ideas on my Github!",
 	"dependencies": ["base >= 0.16"],
