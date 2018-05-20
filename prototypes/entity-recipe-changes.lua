@@ -126,16 +126,39 @@ data.raw.recipe['substation'].ingredients = {
 
 -----------
 --Mining
-data.raw.recipe['burner-mining-drill'].ingredients = {
-	{'basic-engine', 1},
-	{'gear-box', 2},
-	{'iron-casing', 4},
-	{'stone-furnace', 1}
+data.raw.recipe['burner-mining-drill'].normal = {
+	ingredients = {
+		{'basic-engine', 1},
+		{'gear-box', 2},
+		{'iron-casing', 4},
+		{'stone-furnace', 1}
+	},
+	result = 'burner-mining-drill'
 }
-data.raw.recipe['electric-mining-drill'].ingredients = {
-	{'electronic-circuit', 3},
-	{'gear-box', 5},
-	{'iron-casing', 15}
+data.raw.recipe['burner-mining-drill'].expensive = {
+	ingredients = {
+		{'basic-engine', 2},
+		{'gear-box', 4},
+		{'iron-casing', 8},
+		{'stone-furnace', 2}
+	},
+	result = 'burner-mining-drill'
+}
+data.raw.recipe['electric-mining-drill'].normal.ingredients = {
+	ingredients = {
+		{'electronic-circuit', 3},
+		{'gear-box', 5},
+		{'iron-casing', 15}
+	}
+	result = 'electric-mining-drill'
+}
+data.raw.recipe['electric-mining-drill'].expensive.ingredients = {
+	ingredients = {
+		{'electronic-circuit', 6},
+		{'gear-box', 10},
+		{'iron-casing', 30}
+	},
+	result = 'electric-mining-drill'
 }
 data.raw.recipe['offshore-pump'].ingredients = {
 	{'basic-engine', 1},
@@ -335,12 +358,15 @@ data.raw.recipe['fast-splitter'].ingredients = {
 	{'red-dye', 3}
 }
 --Blue
-data.raw.recipe['express-transport-belt'].ingredients = {
-	{'gear-box', 10},
-	{'fast-transport-belt', 1},
-	{'plastic-bar', 1},
-	{'blue-dye', 3},
-	{type = 'fluid', name = 'lubricant', amount = 20}
+data.raw.recipe['express-transport-belt'].normal = {
+	ingredients = {
+		{'gear-box', 10},
+		{'fast-transport-belt', 1},
+		{'plastic-bar', 1},
+		{'blue-dye', 3},
+		{type = 'fluid', name = 'lubricant', amount = 20}
+	},
+	result = 'express-transport-belt'
 }
 data.raw.recipe['express-underground-belt'].ingredients = {
 	{'gear-box', 40},
