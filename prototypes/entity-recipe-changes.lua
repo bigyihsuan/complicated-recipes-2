@@ -144,7 +144,7 @@ data.raw.recipe['burner-mining-drill'].expensive = {
 	},
 	result = 'burner-mining-drill'
 }
-data.raw.recipe['electric-mining-drill'].normal.ingredients = {
+data.raw.recipe['electric-mining-drill'].normal = {
 	ingredients = {
 		{'electronic-circuit', 3},
 		{'gear-box', 5},
