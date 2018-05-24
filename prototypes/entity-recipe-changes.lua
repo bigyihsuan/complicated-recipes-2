@@ -368,6 +368,16 @@ data.raw.recipe['express-transport-belt'].normal = {
 	},
 	result = 'express-transport-belt'
 }
+data.raw.recipe['express-transport-belt'].expensive = {
+	ingredients = {
+		{'gear-box', 20},
+		{'fast-transport-belt', 1},
+		{'plastic-bar', 2},
+		{'blue-dye', 6},
+		{type = 'fluid', name = 'lubricant', amount = 20}
+	},
+	result = 'express-transport-belt'
+}
 data.raw.recipe['express-underground-belt'].ingredients = {
 	{'gear-box', 40},
 	{'fast-underground-belt', 2},

@@ -137,7 +137,7 @@ data:extend({
 		{type = 'fluid', name = 'water', amount = 50}
 	},
 	result = 'raw-wood',
-	result_count = 2,
+	result_count = 10,
 	energy_required = 5,
 	enabled = true --tech name here
 },
