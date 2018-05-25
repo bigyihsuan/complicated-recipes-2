@@ -1,5 +1,7 @@
 function newItem(material, type)
 	local prio = 'a'
+	local name = type
+
 	if type == 'cable' then
 		prio = 'a'
 	end
@@ -12,12 +14,17 @@ function newItem(material, type)
 		prio = 'c'
 	end
 
+	if type == 'bundle' then
+		prio = 'd'
+		name = 'cable-bundle'
+	end
+
 	return
 		{
 			type = 'item',
 			name = material..'-'..type,
 			flags = {'goes-to-main-inventory'},
-			icon = '__complicated-recipes-2__/graphics/basic/'..material..'-'..type..'.png', --icon directory
+			icon = '__complicated-recipes-2__/graphics/basic/'..material..'-'..name..'.png', --icon directory
 			icon_size = 32,
 			subgroup = 'basic',
 			order = prio..'['..material..']',
