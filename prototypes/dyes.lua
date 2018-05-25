@@ -110,6 +110,8 @@ data:extend({
 	ingredients = {{'raw-wood', 1}},
 	result = 'yellow-dye',
 	result_count = 10
+},
+{
 	type = 'recipe',
 	name = 'black-dye',
 	ingredients = {{'raw-wood', 1}},
