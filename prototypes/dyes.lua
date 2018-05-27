@@ -145,5 +145,74 @@ data:extend({
 	ingredients = {{'yellow-dye', 1}, {'red-dye', 1}},
 	result = 'orange-dye',
 	result_count = 2
+},
+
+--ADVANCED DYE CRAFTING
+{
+	type = 'recipe',
+	category = 'crafting-with-fluid',
+	name = 'iron-red-dye',
+	ingredients = {
+		{'iron-ore', 1},
+		{type = 'fluid', name = 'water', count = 30}
+	},
+	energy_required = 2,
+	result = 'red-dye',
+	result_count = 100,
+	enabled = false --automation-2
+},
+{
+	type = 'recipe',
+	category = 'crafting-with-fluid',
+	name = 'coal-black-dye',
+	ingredients = {
+		{'coal', 1},
+		{type = 'fluid', name = 'water', count = 30}
+	},
+	energy_required = 2,
+	result = 'black-dye',
+	result_count = 100,
+	enabled = false --automation-2
+},
+{
+	type = 'recipe',
+	category = 'crafting-with-fluid',
+	name = 'copper-blue-dye',
+	ingredients = {
+		{'copper-ore', 1},
+		{type = 'fluid', name = 'sulfuric-acid', count = 20}
+	},
+	energy_required = 2,
+	result = 'blue-dye',
+	result_count = 100,
+	enabled = false --sulfur-processing
+},
+{
+	type = 'recipe',
+	category = 'crafting-with-fluid',
+	name = 'uranium-green-dye',
+	ingredients = {
+		{'uranium-ore', 1},
+		{type = 'fluid', name = 'sulfuric-acid', count = 20}
+	},
+	energy_required = 2,
+	result = 'green-dye',
+	result_count = 100,
+	enabled = false --sulfur-processing
+},
+{
+	type = 'recipe',
+	category = 'crafting-with-fluid',
+	name = 'sulfur-yellow-orange-dye',
+	ingredients = {
+		{'sulfur', 1},
+		{type = 'fluid', name = 'water', count = 30}
+	},
+	energy_required = 2,
+	results = {
+		{'orange-dye', 100},
+		{'yellow-dye', 100}
+	},
+	enabled = false --sulfur-processing
 }
 })

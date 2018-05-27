@@ -6,7 +6,7 @@ data.raw.recipe['steel-plate'].expensive.ingredients = {
 	{'raw-steel', 4}
 }
 data.raw.recipe['steel-plate'].category = 'crafting'
-data.raw.recipe['steel-plate'].energy_required = 2
+data.raw.recipe['steel-plate'].energy_required = 1
 
 --concrete
 data.raw.recipe['concrete'].ingredients = {

@@ -24,3 +24,7 @@ addTechnologyRecipe('military-3', {'empty-capsule'})
 addTechnologyRecipe('combat-robotics', {'slowdown-solution', 'poison'})
 
 addTechnologyRecipe('laser', {'laser-emitter'})
+
+addTechnologyRecipe('automation-2', {'iron-red-dye','coal-black-dye'})
+
+addTechnologyRecipe('sulfur-processing', {'copper-blue-dye', 'uranium-green-dye', 'sulfur-yellow-orange-dye'})
