@@ -103,7 +103,7 @@ data.raw.recipe['satellite'].ingredients = {
 	{'rocket-fuel', 50}
 }
 
---military
+--ammo
 data.raw.recipe['firearm-magazine'].ingredients = {
 	{'bullet', 10},
 	{'empty-magazine', 1},
@@ -114,15 +114,155 @@ data.raw.recipe['piercing-rounds-magazine'].ingredients = {
 	{'empty-magazine', 1},
 	{'red-dye', 1}
 }
+data.raw.recipe['uranium-rounds-magazine'].ingredients = {
+	{'piercing-rounds-magazine', 1},
+	{'uranium-238', 1},
+	{'steel-casing', 1},
+	{'green-dye', 1}
+}
 data.raw.recipe['shotgun-shell'].ingredients = {
 	{'bullet', 10},
 	{'empty-shotgun-shell', 1},
-	{'blue-dye', 1},
+	{'red-dye', 1},
 }
 data.raw.recipe['piercing-shotgun-shell'].ingredients = {
 	{'piercing-bullet', 10},
 	{'empty-shotgun-shell', 1},
-	{'purple-dye', 1}
+	{'blue-dye', 1},
+	{'green-dye', 1}
+}
+data.raw.recipe['rocket'].ingredients = {
+	{'electronic-circuit', 1},
+	{'explosives', 1},
+	{'iron-casing', 5},
+	{'steel-casing', 3},
+	{'yellow-dye', 1}
+}
+data.raw.recipe['explosive-rocket'].ingredients = {
+	{'explosives', 2},
+	{'rocket', 1},
+	{'red-dye', 1}
+}
+data.raw.recipe['atomic-bomb'].ingredients = {
+	{'explosives', 10},
+	{'processing-unit', 20},
+	{'uranium-235', 30},
+	{'explosive-rocket', 1},
+	{'green-dye', 1}
+}
+data.raw.recipe['cannon-shell'].normal = {
+	ingredients = {
+		{'explosives', 1},
+		{'plastic-casing', 4},
+		{'steel-casing', 4}
+	},
+	result = 'cannon-shell'
+}
+data.raw.recipe['cannon-shell'].expensive = {
+	ingredients = {
+		{'explosives', 1},
+		{'plastic-casing', 8},
+		{'steel-casing', 8}
+	},
+	result = 'cannon-shell'
+}
+data.raw.recipe['explosive-cannon-shell'].normal = {
+	ingredients = {
+		{'cannon-shell', 1},
+		{'explosives', 1},
+		{'plastic-casing', 2},
+		{'steel-casing', 5}
+	},
+	result = 'explosive-cannon-shell'
+}
+data.raw.recipe['explosive-cannon-shell'].expensive = {
+	ingredients = {
+		{'cannon-shell', 1},
+		{'explosives', 2},
+		{'plastic-casing', 4},
+		{'steel-casing', 10}
+	},
+	result = 'explosive-cannon-shell'
+}
+data.raw.recipe['uranium-cannon-shell'].ingredients = {
+	{'cannon-shell', 1},
+	{'explosive-cannon-shell', 1},
+	{'uranium-238', 1},
+	{'green-dye', 1}
+}
+data.raw.recipe['artillery-shell'].ingredients = {
+	{'explosive-cannon-shell', 4},
+	{'explosives', 8},
+	{'steel-casing', 10},
+	{'radar', 1}
+}
+data.raw.recipe['flamethrower-ammo'].ingredients = {
+	{type = 'fluid', name = 'heavy-oil', amount = 50},
+	{type = 'fluid', name = 'light-oil', amount = 50},
+	{type = 'item', name = 'steel-casing', amount = 10},
+	{type = 'item', name = 'fuel-casing', amount = 1}
+}
+data.raw.recipe['grenade'].ingredients = {
+	{'coal', 10},
+	{'iron-casing', 10},
+	{'steel-casing', 5}
+}
+data.raw.recipe['cluster-grenade'].ingredients = {
+	{'explosives', 5},
+	{'grenade', 7},
+	{'steel-casing', 15}
+}
+
+--guns
+data.raw.recipe['pistol'].ingredients = {
+	{'copper-casing', 10},
+	{'iron-casing', 10}
+}
+data.raw.recipe['submachine-gun'].normal = {
+	ingredients = {
+		{'pistol', 1},
+		{'iron-gear-wheel', 10},
+		{'iron-casing', 10},
+		{'steel-casing', 10}
+	},
+	result = 'submachine-gun'
+}
+data.raw.recipe['submachine-gun'].expensive = {
+	ingredients = {
+		{'pistol', 1},
+		{'iron-gear-wheel', 15},
+		{'iron-casing', 15},
+		{'steel-casing', 15}
+	},
+	result = 'submachine-gun'
+}
+data.raw.recipe['shotgun'].ingredients = {
+	{'pistol', 1},
+	{'iron-casing', 10},
+	{'wood', 5},
+	{'iron-gear-wheel', 5}
+}
+data.raw.recipe['combat-shotgun'].ingredients = {
+	{'shotgun', 1},
+	{'copper-casing', 10},
+	{'steel-casing', 30},
+	{'wood', 5}
+}
+data.raw.recipe['flamethrower'].ingredients = {
+	{'pipe', 5},
+	{'iron-gear-wheel', 10},
+	{'steel-casing', 20}
+}
+data.raw.recipe['rocket-launcher'].ingredients = {
+	{'pipe', 5},
+	{'electronic-circuit', 5},
+	{'iron-gear-wheel', 5},
+	{'steel-casing', 15}
+}
+data.raw.recipe['artillery-targeting-remote'].ingredients = {
+	{'processing-unit', 1},
+	{'radar', 1},
+	{'plastic-chip', 1}
 }
 
 --capsules

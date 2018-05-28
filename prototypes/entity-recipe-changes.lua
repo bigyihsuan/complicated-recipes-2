@@ -460,3 +460,20 @@ data.raw.recipe['fluid-wagon'].ingredients = {
 	{'steel-casing', 10},
 	{'storage-tank', 3}
 }
+-----------
+--Artillery
+data.raw.recipe['artillery-turret'].ingredients = {
+	{'advanced-circuit', 20},
+	{'concrete', 60},
+	{'iron-gear-wheel', 40},
+	{'steel-casing', 120},
+	{'yellow-dye', 20}
+}
+data.raw.recipe['artillery-wagon'].ingredients = {
+	{'advanced-circuit', 20},
+	{'engine-unit', 64},
+	{'gear-box', 10},
+	{'pipe', 16},
+	{'steel-casing', 80},
+	{'yellow-dye', 20}
+}

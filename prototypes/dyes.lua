@@ -30,7 +30,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-c',
-	order = 'e[7]',
+	order = 'e[3]',
 	stack_size = 100
 },
 {
@@ -52,7 +52,7 @@ data:extend({
 	icon_size = 32,
 	subgroup = 'dye',
 	inventory_order = 'a[a]-e',
-	order = 'e[5]',
+	order = 'e[7]',
 	stack_size = 100
 },
 {
@@ -95,6 +95,7 @@ data:extend({
 	name = 'red-dye',
 	ingredients = {{'raw-wood', 1}},
 	result = 'red-dye',
+	order = 'e[1]',
 	result_count = 10
 },
 {
@@ -102,6 +103,7 @@ data:extend({
 	name = 'blue-dye',
 	ingredients = {{'raw-wood', 1}},
 	result = 'blue-dye',
+	order = 'e[5]',
 	result_count = 10
 },
 {
@@ -109,6 +111,7 @@ data:extend({
 	name = 'yellow-dye',
 	ingredients = {{'raw-wood', 1}},
 	result = 'yellow-dye',
+	order = 'e[3]',
 	result_count = 10
 },
 {
@@ -116,6 +119,7 @@ data:extend({
 	name = 'black-dye',
 	ingredients = {{'raw-wood', 1}},
 	result = 'black-dye',
+	order = 'e[8]',
 	result_count = 10
 },
 {
@@ -123,6 +127,7 @@ data:extend({
 	name = 'white-dye',
 	ingredients = {{'raw-wood', 1}},
 	result = 'white-dye',
+	order = 'e[7]',
 	result_count = 10
 },
 {
@@ -130,6 +135,7 @@ data:extend({
 	name = 'green-dye',
 	ingredients = {{'yellow-dye', 1}, {'blue-dye', 1}},
 	result = 'green-dye',
+	order = 'e[4]',
 	result_count = 2
 },
 {
@@ -137,6 +143,7 @@ data:extend({
 	name = 'purple-dye',
 	ingredients = {{'blue-dye', 1}, {'red-dye', 1}},
 	result = 'purple-dye',
+	order = 'e[6]',
 	result_count = 2
 },
 {
@@ -144,6 +151,7 @@ data:extend({
 	name = 'orange-dye',
 	ingredients = {{'yellow-dye', 1}, {'red-dye', 1}},
 	result = 'orange-dye',
+	order = 'e[2]',
 	result_count = 2
 },
 
@@ -154,11 +162,12 @@ data:extend({
 	name = 'iron-red-dye',
 	ingredients = {
 		{'iron-ore', 1},
-		{type = 'fluid', name = 'water', count = 30}
+		{type = 'fluid', name = 'water', amount = 30}
 	},
 	energy_required = 2,
 	result = 'red-dye',
 	result_count = 100,
+	order = 'e[1]',
 	enabled = false --automation-2
 },
 {
@@ -167,11 +176,12 @@ data:extend({
 	name = 'coal-black-dye',
 	ingredients = {
 		{'coal', 1},
-		{type = 'fluid', name = 'water', count = 30}
+		{type = 'fluid', name = 'water', amount = 30}
 	},
 	energy_required = 2,
 	result = 'black-dye',
 	result_count = 100,
+	order = 'e[8]',
 	enabled = false --automation-2
 },
 {
@@ -180,11 +190,12 @@ data:extend({
 	name = 'copper-blue-dye',
 	ingredients = {
 		{'copper-ore', 1},
-		{type = 'fluid', name = 'sulfuric-acid', count = 20}
+		{type = 'fluid', name = 'sulfuric-acid', amount = 20}
 	},
 	energy_required = 2,
 	result = 'blue-dye',
 	result_count = 100,
+	order = 'e[5]',
 	enabled = false --sulfur-processing
 },
 {
@@ -193,11 +204,12 @@ data:extend({
 	name = 'uranium-green-dye',
 	ingredients = {
 		{'uranium-ore', 1},
-		{type = 'fluid', name = 'sulfuric-acid', count = 20}
+		{type = 'fluid', name = 'sulfuric-acid', amount = 20}
 	},
 	energy_required = 2,
 	result = 'green-dye',
 	result_count = 100,
+	order = 'e[4]',
 	enabled = false --sulfur-processing
 },
 {
@@ -206,13 +218,17 @@ data:extend({
 	name = 'sulfur-yellow-orange-dye',
 	ingredients = {
 		{'sulfur', 1},
-		{type = 'fluid', name = 'water', count = 30}
+		{type = 'fluid', name = 'water', amount = 30}
 	},
 	energy_required = 2,
 	results = {
 		{'orange-dye', 100},
 		{'yellow-dye', 100}
 	},
+	order = 'e[3]',
+	icon = '__complicated-recipes-2__/graphics/dye/dye-yellow.png',
+	icon_size = 32,
+	subgroup = 'dye',
 	enabled = false --sulfur-processing
 }
 })
